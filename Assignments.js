@@ -8,10 +8,9 @@
 // 3iii. for numbers which are multiples of both 3 and 5, log fizzbuzz.
 
 
-// for (ind = 10; ind >= 1; ind--) {
-//     console.log('B
-// last off at the end');
-// }
+for (ind = 10; ind >= 1; ind--) {
+    console.log('Blast off at the end')
+}
 
 for (ide = 0; ide <= 20; ide++) {
     
@@ -20,15 +19,15 @@ for (ide = 0; ide <= 20; ide++) {
 }
 
 
-// for (ita = 1; ita <= 50; ita++) {
-//     // console.log(ita)
-//     if (ita % 3 === 0){
-//         console.log('Fizz')
-//         }
-//     if (ita % 5 === 0){
-//         console.log('Buzz')
-//         }
-//         if (ita % 3 === 0 && ita % 5 === 0){
-//             console.log('FizzBuzz')
-//         }
-// }
+for (ita = 1; ita <= 50; ita++) {
+    // console.log(ita)
+    if (ita % 3 === 0){
+        console.log('Fizz')
+        }
+    if (ita % 5 === 0){
+        console.log('Buzz')
+        }
+        if (ita % 3 === 0 && ita % 5 === 0){
+            console.log('FizzBuzz')
+        }
+}
