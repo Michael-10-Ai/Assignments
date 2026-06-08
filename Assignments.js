@@ -9,25 +9,28 @@
 
 
 for (ind = 10; ind >= 1; ind--) {
-    console.log('Blast off at the end')
+    console.log(ind)
 }
+console.log('Blast off at the end')
 
-for (ide = 0; ide <= 20; ide++) {
-    
-    console.log(ide++)
-
+let sum = 0
+for (let ide = 0; ide <= 20; ide++) {
+sum += ide
 }
+console.log(sum)
 
 
-for (ita = 1; ita <= 50; ita++) {
+for (ita = 1; ita <= 50; ita++) 
     // console.log(ita)
-    if (ita % 3 === 0){
-        console.log('Fizz')
-        }
-    if (ita % 5 === 0){
-        console.log('Buzz')
-        }
-        if (ita % 3 === 0 && ita % 5 === 0){
+     if (ita % 3 === 0 && ita % 5 === 0){
             console.log('FizzBuzz')
         }
+    else if (ita % 3 === 0){
+        console.log('Fizz')
+        }
+    else if (ita % 5 === 0){
+        console.log('Buzz')
+        }
+else {
+    console.log(ita)
 }
