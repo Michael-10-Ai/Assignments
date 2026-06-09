@@ -10,27 +10,49 @@
 
 for (ind = 10; ind >= 1; ind--) {
     console.log(ind)
+
+
+
 }
 console.log('Blast off at the end')
 
 let sum = 0
 for (let ide = 0; ide <= 20; ide++) {
-sum += ide
+    sum += ide
 }
 console.log(sum)
 
 
-for (ita = 1; ita <= 50; ita++) 
+for (ita = 1; ita <= 50; ita++)
     // console.log(ita)
-     if (ita % 3 === 0 && ita % 5 === 0){
-            console.log('FizzBuzz')
-        }
-    else if (ita % 3 === 0){
+    if (ita % 3 === 0 && ita % 5 === 0) {
+        console.log('FizzBuzz')
+    }
+    else if (ita % 3 === 0) {
         console.log('Fizz')
-        }
-    else if (ita % 5 === 0){
+    }
+    else if (ita % 5 === 0) {
         console.log('Buzz')
-        }
-else {
-    console.log(ita)
+    }
+    else {
+        console.log(ita)
+    }
+
+
+
+//write a function that converts temperature in degree fahrenheit to degree celsius and also from degree celsius to degree fahrenheit
+
+//c = (f - 32) * 5/9
+//f = c * 9/5 + 32
+
+function temperature(celsius, fahrenheit){
+    let degree_fahrenheit = celsius * 9/5 + 32;
+    console.log(degree_fahrenheit + 'f')
+
+    let degree_celsius = (fahrenheit - 32) * 5/9;
+    console.log(degree_celsius + 'c')
 }
+temperature(30, 50)
+
+
+
