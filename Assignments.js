@@ -45,14 +45,17 @@ for (ita = 1; ita <= 50; ita++)
 //c = (f - 32) * 5/9
 //f = c * 9/5 + 32
 
-function temperature(celsius, fahrenheit){
+function temperature(celsius){
     let degree_fahrenheit = celsius * 9/5 + 32;
     console.log(degree_fahrenheit + 'f')
+}
+temperature(30)
 
-    let degree_celsius = (fahrenheit - 32) * 5/9;
+function temperatur(fahrenheit){
+     let degree_celsius = (fahrenheit - 32) * 5/9;
     console.log(degree_celsius + 'c')
 }
-temperature(30, 50)
+temperatur(50)
 
 
 
