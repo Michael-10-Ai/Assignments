@@ -59,3 +59,30 @@ temperatur(50)
 
 
 
+// Create a function named checkEntry.
+// ​It should accept two parameters: age (a number) and isVIP (a boolean: true or false).
+// ​Rule 1: If isVIP is true, return "Access Granted: Welcome VIP!" immediately.
+// ​Rule 2: If they are not a VIP, they must be 21 or older. If they are under 21, return "Access Denied: Too young!".
+// ​Rule 3: If they pass both checks, return "Access Granted: Enjoy the night!".
+
+function checkEntry(age, isVIP){
+    if (isVIP === true){
+        console.log("Access Granted: Welcome VIP!")
+        }
+
+    if (age < 21){
+        console.log("Access Denied: Too young!")
+        }
+
+
+    if (isVIP === true && age === 21){
+        console.log("Access Granted: Enjoy the night!")
+    }
+}
+
+console.log(checkEntry(21, true))
+
+
+
+
+
