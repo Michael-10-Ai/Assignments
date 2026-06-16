@@ -45,14 +45,14 @@ for (ita = 1; ita <= 50; ita++)
 //c = (f - 32) * 5/9
 //f = c * 9/5 + 32
 
-function temperature(celsius){
-    let degree_fahrenheit = celsius * 9/5 + 32;
+function temperature(celsius) {
+    let degree_fahrenheit = celsius * 9 / 5 + 32;
     console.log(degree_fahrenheit + 'f')
 }
 temperature(30)
 
-function temperatur(fahrenheit){
-     let degree_celsius = (fahrenheit - 32) * 5/9;
+function temperatur(fahrenheit) {
+    let degree_celsius = (fahrenheit - 32) * 5 / 9;
     console.log(degree_celsius + 'c')
 }
 temperatur(50)
@@ -65,24 +65,154 @@ temperatur(50)
 // ​Rule 2: If they are not a VIP, they must be 21 or older. If they are under 21, return "Access Denied: Too young!".
 // ​Rule 3: If they pass both checks, return "Access Granted: Enjoy the night!".
 
-function checkEntry(age, isVIP){
-    if (isVIP === true){
-        console.log("Access Granted: Welcome VIP!")
-        }
+function checkEntry(age, isVIP) {
 
-    if (age < 21){
-        console.log("Access Denied: Too young!")
-        }
-
-
-    if (isVIP === true && age === 21){
-        console.log("Access Granted: Enjoy the night!")
+    if (isVIP === true && age >= 21) {
+        return "Access Granted: Enjoy the night!"
+    } else if (isVIP === true) {
+        return "Access Granted: Welcome VIP!"
+    } else if (age < 21) {
+        return "Access Denied: Too young!"
     }
+
 }
 
-console.log(checkEntry(21, true))
+console.log(checkEntry(22, true))
+
+
+// function calculateDogAge() {
+// let puppy_age = 3;
+// puppy_age = 7 * 3
+// console.log(puppy_age)
+// if (puppy_age === 7*3){
+//     console.log('your doggie is 21 years old in dog years')
+// }
+
+// let human_age;
+// human_age = puppy_age / 7
+// console.log(human_age)
+// if (human_age === puppy_age / 7){ 
+//     return 'You are 3 years old in human years'
+// }
+// }
+
+// function calculateDogAge(){
+//     puppy_age = 5
+//     puppy_age = 7 * 5
+//     console.log(puppy_age)
+//     if (puppy_age === 7*5){
+//         console.log('Your doggie is 35 years old in dog years')
+//     }
+
+    
+// let human_age;
+// human_age = puppy_age / 7
+// console.log(human_age)
+// if (human_age === puppy_age / 7){
+//     return 'You are 5 years old in human years'
+// }
+// }
+
+// function calculateDogAge(){
+//     puppy_age = 7
+//     puppy_age = 7 * 7
+//     console.log(puppy_age)
+//     if (puppy_age === 7*7){
+//         console.log('Your doggie is 49 years old in dog years')
+//     }
+    
+// let human_age;
+// human_age = puppy_age / 7
+// console.log(human_age)
+// if (human_age === puppy_age / 7){
+//     return 'You are 7 years old in human years'
+// }
+// }
+
+// function calculateDogAge(){
+//     puppy_age = 10
+//     puppy_age = 7 * 10
+//     console.log(puppy_age)
+//     if (puppy_age === 7*10){
+//         console.log('Your doggie is 70 years old in dog years')
+//     }
+
+    
+// let human_age;
+// human_age = puppy_age / 7
+// console.log(human_age)
+// if (human_age === puppy_age / 7){
+//     return 'You are 10 years old in human years'
+// }
+// }
+// console.log(calculateDogAge())
+
+// Write a function named calculateDogAge that:
+// takes 1 argument: your puppy's age.
+// calculates your dog's age based on the conversion rate of 1 human year to 7 dog years.
+// outputs the result to the screen like so: "Your doggie is NN years old in dog years!"
+// Call the function three times with different sets of values.
+// Bonus: Add an additional argument to the function that takes the conversion rate of human to dog years.
+
+
+// Create a function called calcCircumfrence:
+
+// Pass the radius to the function.
+// Calculate the circumference based on the radius, and output "The circumference is NN".
+// Create a function called calcArea:
+
+// Pass the radius to the function.
+// Calculate the area based on the radius, and output "The area is NN".
 
 
 
+function calculateDogAge(){
+    puppy_age = 3
+puppy_age = puppy_age * 7
+console.log(puppy_age)
+return 'Your doggie is 21 years old in dog years'
+}
+
+function calculateDogAge(){
+    puppy_age = 5
+    puppy_age = puppy_age * 7
+    console.log(puppy_age)
+    return 'Your doggie is 35 years old in dog years'
+}
+
+function calculateDogAge(){
+    puppy_age = 7
+    puppy_age = puppy_age * 7
+    console.log(puppy_age)
+    return 'Your doggie is 49 years old in dog years'
+}
+
+function calculateDogAge(){
+    puppy_age = 10
+    puppy_age = puppy_age * 7
+    console.log(puppy_age)
+    return 'Your doggie is 70 years old in dog years'
+}
+
+function calculateDogAge(){
+    puppy_age = 14
+    human_age = puppy_age / 7
+    console.log(human_age)
+    return 'You are 2 years old in human years '
+}
+console.log(calculateDogAge())
 
 
+function calCircumference(radius){
+let circumference = 2 * 3.14 * radius**2
+console.log(circumference + 'cm')
+return 'The circumference is 307.72cm'
+}
+console.log(calCircumference(7))
+
+function calcArea(radius){
+let area = 3.14 * radius**2
+console.log(area + 'cm')
+return 'The area is 314cm*2'
+}
+console.log(calcArea(10))
