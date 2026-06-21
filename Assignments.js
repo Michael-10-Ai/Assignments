@@ -104,7 +104,7 @@ console.log(checkEntry(22, true))
 //         console.log('Your doggie is 35 years old in dog years')
 //     }
 
-    
+
 // let human_age;
 // human_age = puppy_age / 7
 // console.log(human_age)
@@ -120,7 +120,7 @@ console.log(checkEntry(22, true))
 //     if (puppy_age === 7*7){
 //         console.log('Your doggie is 49 years old in dog years')
 //     }
-    
+
 // let human_age;
 // human_age = puppy_age / 7
 // console.log(human_age)
@@ -137,7 +137,7 @@ console.log(checkEntry(22, true))
 //         console.log('Your doggie is 70 years old in dog years')
 //     }
 
-    
+
 // let human_age;
 // human_age = puppy_age / 7
 // console.log(human_age)
@@ -166,35 +166,35 @@ console.log(checkEntry(22, true))
 
 
 
-function calculateDogAge(){
+function calculateDogAge() {
     puppy_age = 3
-puppy_age = puppy_age * 7
-console.log(puppy_age)
-return 'Your doggie is 21 years old in dog years'
+    puppy_age = puppy_age * 7
+    console.log(puppy_age)
+    return 'Your doggie is 21 years old in dog years'
 }
 
-function calculateDogAge(){
+function calculateDogAge() {
     puppy_age = 5
     puppy_age = puppy_age * 7
     console.log(puppy_age)
     return 'Your doggie is 35 years old in dog years'
 }
 
-function calculateDogAge(){
+function calculateDogAge() {
     puppy_age = 7
     puppy_age = puppy_age * 7
     console.log(puppy_age)
     return 'Your doggie is 49 years old in dog years'
 }
 
-function calculateDogAge(){
+function calculateDogAge() {
     puppy_age = 10
     puppy_age = puppy_age * 7
     console.log(puppy_age)
     return 'Your doggie is 70 years old in dog years'
 }
 
-function calculateDogAge(){
+function calculateDogAge() {
     puppy_age = 14
     human_age = puppy_age / 7
     console.log(human_age)
@@ -203,16 +203,74 @@ function calculateDogAge(){
 console.log(calculateDogAge())
 
 
-function calCircumference(radius){
-let circumference = 2 * 3.14 * radius**2
-console.log(circumference + 'cm')
-return 'The circumference is 307.72cm'
+function calCircumference(radius) {
+    let circumference = 2 * 3.14 * radius ** 2
+    console.log(circumference + 'cm')
+    return 'The circumference is 307.72cm'
 }
 console.log(calCircumference(7))
 
-function calcArea(radius){
-let area = 3.14 * radius**2
-console.log(area + 'cm')
-return 'The area is 314cm*2'
+function calcArea(radius) {
+    let area = 3.14 * radius ** 2
+    console.log(area + 'cm')
+    return 'The area is 314cm*2'
 }
 console.log(calcArea(10))
+
+
+// The assignment 
+
+// 1. Write a JavaScript function to capitalize the first letter of a string.
+
+// Test Data :
+
+// console.log(capitalize('js string exercises'));
+// "Js string exercises"
+
+// Write a JavaScript function to capitalize the first letter of each word in a string.
+
+// Test Data :
+
+// console.log(capitalize_Words('js string exercises'));
+// "Js String Exercises"
+
+// Write a JavaScript function to convert a string into camel case.
+
+// Test Data :
+
+// console.log(camelize("JavaScript Exercises"));
+// console.log(camelize("JavaScript exercises"));
+// console.log(camelize("JavaScriptExercises"));
+// "JavaScriptExercises"
+// "JavaScriptExercises"
+// "JavaScriptExercises"
+
+
+function capitalize(lala) {
+    return lala.at(0).toUpperCase()
+}
+console.log(capitalize('js string exercises'))
+
+ 
+function capitalize_Words(lale) {
+    return lale.at(0, 4, 10).toUpperCase()
+}
+console.log(capitalize_Words('js string exercises'))
+
+
+function camelize(lalo) {
+    return lalo.toUpperCase()
+}
+console.log(camelize('JavaScript Exercises'))
+
+
+function camelize(lalu) {
+    return lalu.toUpperCase()
+}
+console.log(camelize('JavaScript exercises'))
+
+
+function camelize(lalae) {
+    return lalae.toUpperCase()
+}
+console.log(camelize('JavaScriptExercises'))
