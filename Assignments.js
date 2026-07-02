@@ -251,7 +251,7 @@ function capitalize(lala) {
 }
 console.log(capitalize('js string exercises'))
 
- 
+
 function capitalize_Words(lale) {
     return lale.at(0, 4, 10).toUpperCase()
 }
@@ -286,10 +286,35 @@ console.log(camelize('JavaScriptExercises'))
 // console.log(truncate_string("Robin Singh",4));
 // "Robi"
 
-function truncate_string(lolo){
+function truncate_string(lolo) {
     let nolo = lolo.substring(4);
     return nolo
 }
-console.log(truncate_string("Robin Singh",4));
-"Robi"
+console.log(truncate_string("Robin Singh", 4));
+
+
+//Write a JavaScript function to sort the items of an array.
+// Sample array : var arr1 = [-3, 8, 7, 6, 5, -4, 3, 2, 1];
+
+// Write a JavaScript program to find the sum of squares of a numerical vector
+
+// Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).  
+
+let arr1 = [-3, 8, 7, 6, 5, -4, 3, 2, 1]
+function sort() {
+    return arr1.sort()
+}
+console.log(sort())
+
+function square(vector, vect) {
+    let numvec = vector ** 2 + vect ** 2
+    return numvec
+}
+console.log(square(10, 20))
+
+let arr2 = ['Rice', 'Beans', 'Yam', 'Potato', 'beans', 'Garri']
+function arraay() {
+    return arr2[1]
+}
+console.log(arraay(arr2))
 
