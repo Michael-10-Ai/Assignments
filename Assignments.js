@@ -318,3 +318,162 @@ function arraay() {
 }
 console.log(arraay(arr2))
 
+
+// Question 1.
+//  Sum of Arrays by Index
+
+// There are two arrays with individual values. Write a JavaScript program to compute the sum of each individual index value in the given array.
+
+// Sample array :
+
+// array1 = [1,0,2,3,4];
+// array2 = [3,5,6,7,8,13];
+
+// Expected Output :
+
+// [4, 5, 8, 10, 12, 13]
+
+array1 = [1, 0, 2, 3, 4];
+array2 = [3, 5, 6, 7, 8, 13];
+function sumindex() {
+    let botharrs = array1[0, 1, 2, 3, 4] + array2[0, 1, 2, 3, 4, 5]
+    return botharrs
+}
+console.log(sumindex())
+
+
+// Write a JavaScript function to get the first element of an array. Passing the parameter 'n' will return the first 'n' elements of the array.
+
+// Test Data :
+
+// console.log(first([7, 9, 0, -2]));
+
+// console.log(first([],3));
+
+// console.log(first([7, 9, 0, -2],3));
+
+// console.log(first([7, 9, 0, -2],6));
+
+// console.log(first([7, 9, 0, -2],-3));
+
+// Expected Output :
+
+// 7
+// []
+// [7, 9, 0]
+// [7, 9, 0, -2]
+// []
+
+function first(n) {
+    return n.at(1)
+}
+console.log(first([7, 9, 0, -2]));
+console.log(first([], 3));
+console.log(first([7, 9, 0, -2], 3));
+console.log(first([7, 9, 0, -2], 6));
+console.log(first([7, 9, 0, -2], -3));
+
+
+// Write a JavaScript function to get the last element of an array. Passing the parameter 'n' will return the last 'n' elements of the array.
+
+// Test Data :
+
+// console.log(last([7, 9, 0, -2]));
+// console.log(last([7, 9, 0, -2],3));
+// console.log(last([7, 9, 0, -2],6));
+
+// Expected Output :
+// -2
+// [9, 0, -2]
+// [7, 9, 0, -2]
+
+function last(n) {
+    return n
+}
+
+console.log(last([7, 9, 0, -2], 3));
+console.log(last([7, 9, 0, -2], 6));
+console.log(last([7, 9, 0, -2]));
+
+
+// Imagine you have a list of user actions or bank transactions sorted chronologically (oldest to newest). You want to grab the most recent action of a specific type.
+
+// const userLogs = [
+//   { action: 'login', time: '09:00 AM' },
+//   { action: 'update_profile', time: '10:15 AM' },
+//   { action: 'login', time: '01:30 PM' }, { action: 'logout', time: '05:00 PM' }]
+
+function banktransactions() {
+
+}
+
+
+// let arrayys = [1, 2, 2, 3, 3, 3, 4]
+
+// let how_many = 0;
+// function aray(no_1, no_2) {
+//     let myArray_no = arrayys
+
+//     for (let i = 0; i < myArray_no.length; i++) {
+//         if (myArray_no[i] === no_2) {
+
+//             how_many += 1
+//         }
+
+
+//     }
+//     return `The ${no_2} is found ${how_many} times`
+
+// }
+// console.log(aray(arrayys))
+
+// 1. Count how many times an element appears in an array
+// let array = [1, 2, 2, 3, 3, 3, 4]
+
+// 2.Multiply each element of an array by a number
+
+// 3. create a function get_adults that filters an array of objects and returns only the guests who are 18 years or older
+//  const guests = [
+// {Name: 'Alice', Age: 16},
+// {Name: 'Bob', Age: 22},
+// {Name: 'Chalie', Age: 17},
+// {Name: 'David', Age: 30}
+// ]
+
+let array = [1, 2, 2, 3, 3, 3, 4]
+
+function arayy (no_1){
+let dig = array.forEach(element => {
+    let no_2 = 0
+    if (array === no_2)
+
+        no_2 += 1
+        return `The ${no_1} is found ${no_2} times`
+})
+}
+console.log(arayy())
+
+
+let multiply_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+function mul_arr(){
+multiply_array = multiply_array.map(multi => multi * 3)
+return multiply_array
+}
+console.log(mul_arr())
+
+
+const guests = [
+    { Name: 'Alice', Age: 16 },
+    { Name: 'Bob', Age: 22 },
+    { Name: 'Chalie', Age: 17 },
+    { Name: 'David', Age: 30 }
+]
+
+function get_adults() {
+
+    let guestsss = guests.filter(guest => guest.Age >= 18)
+    return guestsss
+}
+console.log(get_adults())
+
+
